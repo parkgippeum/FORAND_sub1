@@ -1,0 +1,142 @@
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+
+body{font-family: 'Noto Sans kr';
+    font-size: 13px;
+    line-height: 25px;
+    color: #000;
+}
+
+.top{position:fixed; bottom:50px; right:50px; display:none;}
+
+/* header */
+#header{width: 100%; height: 110px;}
+.header_inner{width: 1320px; margin: 0 auto; position: relative;}
+.icon{position:absolute; top:45px; right:150px;}
+.icon li{float: left; padding-right: 20px;}
+
+.logo{position:absolute; top:25px; left:50%; margin-left: -32.5px;}
+
+.icon li:hover{opacity: 0.5; color: #000;}
+
+/* nav */
+.nav{width: 100%;
+    text-align: center;
+    background-color: #6b7d64;
+    text-transform:uppercase;
+    z-index: 95;
+    position: relative;
+}
+
+.nav ul{
+    width:800px;
+	margin:auto;
+    display:flex;
+	justify-content:space-between;}
+
+.nav>ul>li{float: left;}
+.nav>ul>li>a{display:block; padding:15px 50px; font-size: 17px; font-weight: bold; color: #eaded9;}
+.nav>ul>li>a:hover{color:rgb(21, 33, 16)}
+
+.nav li:hover .sub_bg{display:block;}
+
+.sub_bg{width:100%; background-color: #fff; height:240px;
+    position:absolute; top: 55px; left:0;
+    display:none; background-image: url(../images/navbg.jpg);/* background-color: #f5ede0;*/ font-weight: bold; font-size: 18px;border-bottom: 1px solid #ffffff;}
+    
+.sub{position: relative;}
+.gnb1:nth-child(1){position: absolute; top: 50px; left: 500px;}
+.gnb1:nth-child(2){position: absolute; top: 100px; left: 500px;}
+.gnb1:nth-child(3){position: absolute; top: 150px; left: 500px;}
+.sub_img1{position: absolute; top: 0; left: 50px;}
+.sub_img2{position: absolute; top: 110px; left: 50px;}
+
+.gnb2:nth-child(1){position: absolute; top: 50px; right: 500px;}
+.gnb2:nth-child(2){position: absolute; top: 100px; right: 500px;}
+.gnb2:nth-child(3){position: absolute; top: 150px; right: 500px;}
+.sub_img3{position: absolute; top: 0; right: 50px;}
+.sub_img4{position: absolute; top: 110px; right: 50px;}
+
+.gnb3:nth-child(1){position: absolute; top: 30px; right: 500px;}
+.gnb3:nth-child(2){position: absolute; top: 80px; right: 500px;}
+.gnb3:nth-child(3){position: absolute; top: 130px; right: 500px;}
+.gnb3:nth-child(4){position: absolute; top: 180px; right: 500px;}
+.sub_img3{position: absolute; top: 0; right: 50px;}
+.sub_img4{position: absolute; top: 110px; right: 50px;}
+
+.sub li a{color: #405437;}
+.gnb{text-align: center; padding-top: 70px;}
+.sub img{padding-top: 12px;}
+.sub1_img{padding: 7px;}
+.sub4_img{padding-top: 30px;}
+.sub li a:hover{color: rgb(231, 198, 155);}
+
+.scroll-content{
+    height: 2000px;
+}
+.scroll-fixed{
+    position: fixed;
+    top: 0px;
+}
+
+/* banner */
+#banner{width: 100%; margin: 0 auto; height: 800px; background: url(../images/storymain.png) no-repeat center top;}
+
+/* contents1 */
+#contents1{width: 1280px; height: 1100px; margin: 150px auto;}
+.story1{float: left;}
+.story1 li{float: left;}
+.story1_text{margin: 30px 80px; padding: 65px;}
+.story1_text h1{font-size: 28px; padding: 0 0 50px 0; color: #405437;}
+.story1_text p{font-size: 18px;}
+
+.story2{float: left;}
+.story2 li{float: left;}
+.story2_text{margin: 160px 40px;}
+.story2_text p{font-size: 18px;}
+.story2 img{padding-left: 50px;}
+
+/* contents2 */
+#contents2{width: 1320px; height: 400px; margin: 0 auto;}
+#contents2 h1{text-align: center; padding-top: 80px;}
+
+/* contents3 */
+
+#contents3{width: 1320px; height: 750px; margin: 150px auto;}
+.product_text{text-align: center;}
+.product_text h1{padding-bottom: 30px;}
+
+.product1{float: left; margin-top: 30px;}
+.product1 li{float: left;}
+.product1 li{float: left;}
+.product1 li{float: left;}
+.product1 li img{display: block;}
+
+p.typing-txt{display: none;}
+/*커서가 깜빡거리는 효과부분 시작*/
+.typing {  
+    /*position: absolute;*/ 
+     display: inline-block; 
+      animation-name: cursor; 
+      animation-duration: 0.3s; 
+      animation-iteration-count: infinite; 
+    }
+    @keyframes cursor{ 
+      0%{border-right: 1px solid #fff} 
+      50%{border-right: 1px solid #000} 
+      100%{border-right: 1px solid #fff} 
+    }
+/*커서가 깜빡거리는 효과부분 끝*/
+
+/* footer */
+#footer{width: 100%; height: 180px; margin: 0 auto; background-color: #1f241c;}
+.footer_inner{width: 1320px; margin: 0 auto;}
+.footer_logo{float: left; margin: 60px 0 0px 200px;}
+
+.text{float: left; margin: 42px 0 0 180px; color: #ccc;}
+
+.sns{float: right; margin-right: 250px; margin-top: 70px;}
+.sns_icon li{float: left; padding: 5px;}
+
+.sns li a:hover{opacity: 0.5; color: #fff;}
