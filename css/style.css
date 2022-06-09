@@ -84,7 +84,7 @@ body{font-family: 'Noto Sans kr';
 #banner{width: 100%; margin: 0 auto; height: 800px; background: url(../images/storymain.png) no-repeat center top;}
 
 /* contents1 */
-#contents1{width: 1280px; height: 1100px; margin: 150px auto;}
+#contents1{width: 1320px; height: 1200px; margin: 150px auto;}
 .story1{float: left;}
 .story1 li{float: left;}
 .story1_text{margin: 30px 80px; padding: 65px;}
